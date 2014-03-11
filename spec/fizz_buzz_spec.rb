@@ -34,5 +34,12 @@ describe "FizzBuzz" do
     expect(results).to eq expected_array
   end
 
+  it "Returns 1, 2, Fizz, 4, Buzz, Fizz 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz when passed a 15" do
+    fizzy = FizzBuzz.new(15)
+    results = fizzy.arrayify
+    expected_array = [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+    expect(results).to eq expected_array
+  end
+
 end
 
