@@ -5,7 +5,15 @@ class FizzBuzz
   end
 
   def arrayify
-    (1..@number).to_a
+    raw_array = (1..@number).to_a
+    raw_array.map do |x|
+      if x == 3
+         "Fizz"
+      else
+         x
+      end
+    end
+
   end
 
 end
