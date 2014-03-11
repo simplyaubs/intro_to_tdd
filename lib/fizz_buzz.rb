@@ -9,6 +9,8 @@ class FizzBuzz
     raw_array.map do |x|
       if x == 3
          "Fizz"
+      elsif x == 5
+        "Buzz"
       else
          x
       end

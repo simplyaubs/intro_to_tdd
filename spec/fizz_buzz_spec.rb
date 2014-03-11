@@ -20,6 +20,12 @@ describe "FizzBuzz" do
     expect(results).to eq [1, 2, "Fizz"]
   end
 
+  it "Returns 1, 2, Fizz, 4, Buzz when passed a 5" do
+    fizzy = FizzBuzz.new(5)
+    results = fizzy.arrayify
+    expected_array = [1, 2, "Fizz", 4, "Buzz"]
+    expect(results).to eq expected_array
+  end
 
 end
 
