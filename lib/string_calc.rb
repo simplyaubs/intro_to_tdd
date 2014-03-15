@@ -5,16 +5,12 @@ class StringCalc
   end
 
   def add(string)
-    if string.empty?
-      0
-    else
-      array = string.split(@delimiter)
-      sum = 0
-      array.each do |s|
-        sum =  sum + s.to_i
-      end
-      sum
+    return 0 if string.empty?
+    array = string.split(@delimiter)
+    sum = 0
+    array.each do |s|
+      sum = sum + s.to_i
     end
+    sum
   end
-
 end
