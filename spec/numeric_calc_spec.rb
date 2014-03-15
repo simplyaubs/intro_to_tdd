@@ -12,6 +12,24 @@ describe NumericCalculator do
   end
 
 
+  it "subtracts numbers" do
+    calculator = NumericCalculator.new
+
+    result = calculator.subtract(10, 5)
+
+    expect(result).to eq 5
+  end
+
+
+  it "saves and retrieves a number" do
+    calculator = NumericCalculator.new
+
+    calculator.save(123)
+    result = calculator.get
+
+    expect(result).to eq 123
+  end
+
 end
 
 
