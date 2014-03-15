@@ -20,6 +20,15 @@ describe StringCalc do
     expect(result).to eq 10
   end
 
+
+  it "splits the string with a specified delimiter" do
+    calculator = StringCalc.new(" ")
+
+    result = calculator.add("1 2 7")
+
+    expect(result).to eq 10
+  end
+
 end
 
 
