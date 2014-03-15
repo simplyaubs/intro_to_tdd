@@ -16,4 +16,8 @@ class NumericCalculator
     @saved_value
   end
 
+  def clear
+    @saved_value = 0
+  end
+
 end

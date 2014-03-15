@@ -30,6 +30,18 @@ describe NumericCalculator do
     expect(result).to eq 123
   end
 
+
+  it "clears a saved value" do
+    calculator = NumericCalculator.new
+    calculator.save(456)
+
+    cleared = calculator.clear
+    result = calculator.get
+
+    expect(cleared).to eq 0
+    expect(result).to eq 0
+  end
+
 end
 
 
